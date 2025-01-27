@@ -1,0 +1,112 @@
+/* General Styling */
+.dashboard {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header-bg);
+  padding: 10px 20px;
+  border-bottom: 2px solid var(--header-border);
+}
+
+/* Dropdown Buttons */
+.dropdown-container,
+.account-dropdown-container {
+  position: relative;
+}
+
+.dropdown-button {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown-button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Dropdown Menus */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-container:hover .dropdown-menu,
+.account-dropdown-container:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu div {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown-menu div:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Tabs */
+.tabs-container {
+  display: flex;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.tab {
+  background-color: var(--tab-bg);
+  color: var(--tab-text);
+  border: 1px solid var(--tab-border);
+  padding: 10px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.tab:hover {
+  background-color: var(--tab-hover-bg);
+  color: var(--tab-hover-text);
+}
+
+/* Theme Variables */
+.light-theme {
+  --header-bg: #f4f4f4;
+  --header-border: #ddd;
+  --primary-bg: #007bff;
+  --primary-text: white;
+  --primary-hover: #0056b3;
+  --tab-bg: #f4f4f4;
+  --tab-text: #333;
+  --tab-border: #ddd;
+  --tab-hover-bg: #007bff;
+  --tab-hover-text: white;
+}
+
+.dark-theme {
+  --header-bg: #333;
+  --header-border: #555;
+  --primary-bg: #444;
+  --primary-text: white;
+  --primary-hover: #555;
+  --tab-bg: #444;
+  --tab-text: white;
+  --tab-border: #555;
+  --tab-hover-bg: #007bff;
+  --tab-hover-text: white;
+}
+
+

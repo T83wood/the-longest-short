@@ -1,0 +1,47 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  background-color: #1e293b;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-link {
+  color: #61dafb;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+}
+
+.dashboard-sidebar, .dashboard-trading-panel {
+  background-color: #f1f5f9;
+  padding: 20px;
+  width: 20%;
+}
+
+.dashboard-main {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+.dashboard-footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
