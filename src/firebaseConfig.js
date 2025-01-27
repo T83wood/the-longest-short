@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDLpd2VWHvEcV9quGy1MfujOHKsMfhOLtc",
+  apiKey: "AIzaSyC7SCCPZWtno3Z-XzlaVhY1VO_hr1czscI",
   authDomain: "the-longest-short.firebaseapp.com",
   projectId: "the-longest-short",
   storageBucket: "the-longest-short.appspot.com",
